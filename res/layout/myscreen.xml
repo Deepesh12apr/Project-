@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    
+     android:background="#FF4444"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.55"
+        android:background="#FF4444"
+        android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF4444" 
+         android:layout_weight="0.55"
+        >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:contentDescription="image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"      
+            android:src="@drawable/lock" />
+      
+      </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="#FF4444"
+            android:layout_weight="0.55"
+            >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textSize="70dp"
+            android:text="FlipCover UnLocker"
+            />
+
+         </RelativeLayout>
+    </LinearLayout>
+        
+    <Button
+        android:id="@+id/btnEnable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable" 
+        android:drawableLeft="@drawable/activate"
+         style="@style/btnStyleBeige"
+        
+        />
+
+    <Button
+        android:id="@+id/btnDisable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disable" 
+        android:drawableLeft="@drawable/deacti"
+        style="@style/btnStyleBeige"
+        
+        />
+
+    <Button
+        android:id="@+id/btnLock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/locker"
+        android:paddingLeft="10dp"
+         style="@style/btnStyleBeige"
+        android:text="Lock Now" />
+
+   <!-- 
+    <com.google.android.gms.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="ca-app-pub-8549203901946162/6217091139"
+                         ads:adSize="BANNER"
+                         
+                         />
+    -->
+       <LinearLayout
+           android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:orientation="vertical" >
+       </LinearLayout>
+
+</LinearLayout>
